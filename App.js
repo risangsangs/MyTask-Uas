@@ -7,6 +7,7 @@ import HomeScreen from './src/screens/homeScreen';
 import ListStudentScreen from './src/screens/listStudentScreen';
 import AddStudentScreen from './src/screens/addStudentScreen';
 import GetDetailStudent from './src/screens/getDetailStudentScreen';
+import EditStudentScreen from './src/screens/editStudentScreen';
 
 export default function App() {
   const Stack = createStackNavigator();
@@ -20,6 +21,7 @@ export default function App() {
         <Stack.Screen name="ListStudentScreen" component={ListStudentScreen} />
         <Stack.Screen name="AddStudentScreen" component={AddStudentScreen} />
         <Stack.Screen name="GetDetailStudent" component={GetDetailStudent} />
+        <Stack.Screen name="EditStudentScreen" component={EditStudentScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

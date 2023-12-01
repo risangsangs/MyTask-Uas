@@ -7,6 +7,10 @@ import BtnPrimary from '../../components/btnPrimary';
 import styles from './styles';
 
 const GetDetailStudent = ({ navigation }) => {
+  const handleEdit = () => {
+    navigation.navigate('EditStudentScreen')
+  }
+
   const data = {
     "nama": "Risang Agnijati",
     "Kelas": "XII RPL 5",
@@ -91,6 +95,10 @@ const GetDetailStudent = ({ navigation }) => {
               <Text style={styles.value}>risang@gmail.com</Text>
             </View>
           </View>
+        </View>
+
+        <View style={styles.btnEdit}>
+        <BtnPrimary text='Edit Data' handle={handleEdit}/>
         </View>
 
       </ScrollView>
